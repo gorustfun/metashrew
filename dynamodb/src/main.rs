@@ -72,6 +72,7 @@ pub struct MetashrewKeyDBSync {
 
 impl MetashrewKeyDBSync {
     async fn post_once(&self, body: String) -> Result<Response, reqwest::Error> {
+        debug!("Making RPC call to node - {}", body);
         let response = reqwest::Client::new()
             .post(match self.args.auth.clone() {
                 Some(v) => {
