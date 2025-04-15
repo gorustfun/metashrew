@@ -3,8 +3,12 @@ resolver = "2"
 members = [
   "runtime",
   "memshrew",
+  "metashrew-core",
+  "metashrew-support",
   "memshrew-p2p",
   "rockshrew",
   "rockshrew-runtime",
-  "rockshrew-view"
-, "rockshrew-mono"]
+  "rockshrew-view",
+  "rockshrew-mono",
+  "rockshrew-diff"
+]
